@@ -62,7 +62,7 @@
           link: 'https://www.interactivebrokers.com/en/home.php',
           confirmed: true,
           comment: 'Beste',
-          countries: ['Australia', 'Hong Kong', 'Japan', 'Canada', 'UK', 'Mexico', 'Nasdaq Baltic', 'OMG', 'South Korea', 'Taiwan', 'Israel', 'US', 'Poland', 'Austria']
+          countries: ['Australia', 'Hong Kong', 'Japan', 'Canada', 'United Kingdom', 'Belgium', 'Czech Republic', 'France', 'Germany', 'Hungary', 'Spain', 'Italy', 'Netherlands', 'Poland', 'Portugal', 'Switzerland', 'Mexico', 'Nasdaq Baltic', 'Estonia', 'Latvia', 'Lithuania', 'OMX', 'Sweden', 'Norway', 'Finland', 'Denmark', 'Iceland', 'Singapore', 'South Korea', 'Taiwan', 'Israel', 'US', 'Poland', 'Austria']
         },
         {
           name: "Saxo", 
@@ -114,7 +114,8 @@
         }]);
         options = {
           'colorAxis': {colors: ['yellow', 'green']},
-          legend: 'none'
+          legend: 'none',
+	  magnifyingGlass : { enable: true, zoomFactor: 5}
         }
 
         var chart = new google.visualization.GeoChart(document.getElementById('regions_div'));
