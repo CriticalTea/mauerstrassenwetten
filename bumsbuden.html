@@ -3,35 +3,147 @@
     <title>Bumsbuden Weltkarte</title>
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script type="text/javascript">
+      if (document.URL.startsWith("file://")) {
+        apiKey = '';
+      } else {
+        apiKey = 'AIzaSyCjDdyfe5-a5sBmcFSJwxuVPWoO89UHXbs';
+      }
       google.charts.load('current', {
         'packages':['geochart'],
+        'language':'de',
+        'mapsApiKey': apiKey,
       });
       google.charts.setOnLoadCallback(drawRegionsMap);
 
-      var data = [
-          ['Country', 'ISIN/WKN', 'Title', 'Description', 'Link'],
-          ['South Africa', 'ZAE000320321', 'Premier Group Limited', 'Bäckereien, Mühlen und Damenhygiene-Artikel', 'https://www.reddit.com/r/mauerstrassenwetten/comments/1cohxcy/wie_ich_einmal_fast_eine_b%C3%A4ckerei_in_s%C3%BCdafrika/'],
-          ['China', 'US8552441094', 'Luckin Coffee', 'Chinesisches Starbucks das früher Anleger betrogen hat', 'https://www.reddit.com/r/mauerstrassenwetten/comments/1b9nv70/gl%C3%BCcklicher_kaffee_sternenb%C3%B6cke_bei_wunsch/'],
-          ['Kazakhstan', 'US48581R2058', 'Kaspi Bank', '', ''],
-          ['Ukraine', 'GB00B1XH2C03', 'Ferrexpo PLC', 'Eisenmine', 'https://www.reddit.com/r/mauerstrassenwetten/comments/1bhnh63/ukrainische_freiheitsaktie/'],
-          ['Israel', 'IL0011766354', 'Bull Trading and Investment Ltd', 'Qualitätsbrecher', 'https://www.reddit.com/r/mauerstrassenwetten/comments/1cemok6/dd_israelischer_qualit%C3%A4tsbrecher/'],
-          ['US', 'US9892071054', 'Zebra Technologies', 'Beliebtes Sarafi-Gelände', 'https://www.reddit.com/r/mauerstrassenwetten/comments/1ca8i4j/jagd_auf_rotes_zebra_teil_4/'],
-          ['Canada', 'A1178T', 'Kinaxis Inc', 'Lieferkettenweichware', 'https://www.reddit.com/r/mauerstrassenwetten/comments/1bnd72h/lieferkettenweichware_macht_brrr/'],
-          ['Greece', '', 'Kri-Kri Milk Industry S.A.','Griechischer Joghurt', 'https://www.reddit.com/r/mauerstrassenwetten/comments/1behrcc/griechischer_joghurt_macht_brrr/'],
-          ['France', 'FR0000051732', 'ATOS', 'ATOS?', 'https://www.reddit.com/r/mauerstrassenwetten/comments/1amjgq6/notwendige_sorgfalt_atos/'],
-          ['Germany', '', 'Thyssen Krupp', 'Thyssenkrupp, oder wie ich gelernt hab die „Bruchbude“ zu lieben! ', 'https://www.reddit.com/r/mauerstrassenwetten/comments/1amrzd9/thyssenkrupp_oder_wie_ich_gelernt_hab_die/'],
-          ['Indonesia', 'ID1000060007', 'Mayora Indah', 'Süßigkeiten', 'https://www.reddit.com/r/mauerstrassenwetten/comments/1cohxcy/comment/l3g0fja/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button'],
-          // ['Cayman Islands', 'KYG237731073', 'Consolidated Water', ' Karibische Meerwasserentsalzung macht brrr', 'https://www.reddit.com/r/mauerstrassenwetten/comments/1bihbrw/karibische_meerwasserentsalzung_macht_brrr/']
+      var stocks = [
+		  {
+		  country: 'South Africa',
+		  isin: 'ZAE000320321',
+		  title: 'Premier Group Limited',
+		  description: 'Bäckereien, Mühlen und Damenhygiene-Artikel',
+		  link: 'https://www.reddit.com/r/mauerstrassenwetten/comments/1cohxcy/wie_ich_einmal_fast_eine_b%C3%A4ckerei_in_s%C3%BCdafrika/'
+	  },
+          {
+		  country: 'China',
+		  isin: 'US8552441094',
+		  title: 'Luckin Coffee',
+		  description: 'Chinesisches Starbucks das früher Anleger betrogen hat',
+		  link: 'https://www.reddit.com/r/mauerstrassenwetten/comments/1b9nv70/gl%C3%BCcklicher_kaffee_sternenb%C3%B6cke_bei_wunsch/'
+	  },
+          {
+		  country: 'Kazakhstan',
+		  isin: 'US48581R2058',
+		  title: 'Kaspi Bank',
+		  description: '',
+		  link: ''
+	  },
+          {
+		  country: 'Ukraine',
+		  isin: 'GB00B1XH2C03',
+		  title: 'Ferrexpo PLC',
+		  description: 'Eisenmine',
+		  link: 'https://www.reddit.com/r/mauerstrassenwetten/comments/1bhnh63/ukrainische_freiheitsaktie/'
+	  },
+          {
+		  country: 'Israel',
+		  isin: 'IL0011766354',
+		  title: 'Bull Trading and Investment Ltd',
+		  description: 'Qualitätsbrecher',
+		  link: 'https://www.reddit.com/r/mauerstrassenwetten/comments/1cemok6/dd_israelischer_qualit%C3%A4tsbrecher/'
+	  },
+
+          {
+		  country: 'US',
+		  isin: 'US9892071054',
+		  title: 'Zebra Technologies',
+		  description: 'Beliebtes Sarafi-Gelände',
+		  link: 'https://www.reddit.com/r/mauerstrassenwetten/comments/1ca8i4j/jagd_auf_rotes_zebra_teil_4/'
+	  },
+          {
+		  country: 'Canada', 
+		  isin: 'A1178T',
+		  title: 'Kinaxis Inc',
+		  description: 'Lieferkettenweichware',
+		  link: 'https://www.reddit.com/r/mauerstrassenwetten/comments/1bnd72h/lieferkettenweichware_macht_brrr/'
+	  },
+          {
+		  country: 'Greece',
+		  isin: '',
+		  title: 'Kri-Kri Milk Industry S.A.',
+		  description: 'Griechischer Joghurt',
+		  link: 'https://www.reddit.com/r/mauerstrassenwetten/comments/1behrcc/griechischer_joghurt_macht_brrr/'
+	  },
+          {
+		  country: 'France',
+		  isin: 'FR0000051732',
+		  title: 'ATOS',
+		  description: '',
+		  link: 'https://www.reddit.com/r/mauerstrassenwetten/comments/1amjgq6/notwendige_sorgfalt_atos/'
+	  },
+          {
+		  country: 'Germany',
+		  isin: '',
+		  title: 'Thyssen Krupp',
+		  description: 'Thyssenkrupp, oder wie ich gelernt hab die „Bruchbude“ zu lieben! ',
+		  link: 'https://www.reddit.com/r/mauerstrassenwetten/comments/1amrzd9/thyssenkrupp_oder_wie_ich_gelernt_hab_die/'
+	  },
+          {
+		  country: 'Indonesia',
+		  isin: 'ID1000060007',
+		  title: 'Mayora Indah',
+		  description: 'Süßigkeiten',
+		  link: 'https://www.reddit.com/r/mauerstrassenwetten/comments/1cohxcy/comment/l3g0fja/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button'
+	  },
+	  {
+		  country: 'Argentina',
+		  isin: '',
+		  title: 'Cresud',
+		  description: 'Landwirtschaft',
+		  link: ''
+	  },
+	  {
+		  country: 'Brazil',
+		  isin: '',
+		  title: 'Cresud',
+		  description: 'Landwirtschaft',
+		  link: ''
+	  },
+	  {
+		  country: 'Hawaii',
+		  isin: '',
+		  title: 'Maui Land & Pineapple Company',
+		  description: 'Landwirtschaft',
+		  link: ''
+	  },
+	  {
+		  country: 'Australia',
+		  isin: '',
+		  title: 'Elders Limited',
+		  description: 'Landwirtschaft',
+		  link: ''
+	  },
+	  {
+		country: 'Estonia',
+		isin: '',
+		title: 'Arco Vara AS',
+		description: 'Immobilienbude mit Ex-Rennfahrer als CEO',
+		link: 'https://arcovara.com/en/'
+	  }
+          // {'Cayman Islands', 'KYG237731073', 'Consolidated Water', ' Karibische Meerwasserentsalzung macht brrr', 'https://www.reddit.com/r/mauerstrassenwetten/comments/1bihbrw/karibische_meerwasserentsalzung_macht_brrr/']
       ]
 
       function drawRegionsMap() {
+		data = [['Country', 'Title']];
+      stocks.forEach(stock => {
+            data.push([stock.country, stock.title]);
+        });
         var map_data = google.visualization.arrayToDataTable(data);
 
         var view = new google.visualization.DataView(map_data);
         view.setColumns([0, {
             type: 'number',
             calc: function(data, row) {
-                var titleValue = data.getValue(row, 2);
+                var titleValue = data.getValue(row, 1);
                 //var titleValue = data.getValue(row, 3);
                 return {
                     v: 1,
@@ -42,6 +154,7 @@
         var options = {};
 
         var chart = new google.visualization.GeoChart(document.getElementById('regions_div'));
+		/*
         google.visualization.events.addListener(chart, 'select', function() {
             var selectionIdx = chart.getSelection()[0].row;
             var title = map_data.getValue(selectionIdx, 2);
@@ -51,20 +164,57 @@
             //xconsole.log(map_data
 
         });
+		*/
         chart.draw(view, options);
       }
       function createTable() {
           var table = document.createElement('table');
           var tableBody = document.createElement('tbody');
     
-          data.forEach(function(rowData) {
+              var row = document.createElement('tr');
+                  var cell = document.createElement('th');
+				  cell.textContent = "Land";
+				  row.appendChild(cell);
+
+                  var cell = document.createElement('th');
+				  cell.textContent = "ISIN/WKN";
+				  row.appendChild(cell);
+
+                  var cell = document.createElement('th');
+				  cell.textContent = "Name";
+				  row.appendChild(cell);
+
+                  var cell = document.createElement('th');
+				  cell.textContent = "Beschreibung";
+				  row.appendChild(cell);
+
+              tableBody.appendChild(row);
+          stocks.forEach(function(stock) {
               var row = document.createElement('tr');
           
-              rowData.forEach(function(cellData) {
                   var cell = document.createElement('td');
-                  cell.appendChild(document.createTextNode(cellData));
+                  cell.appendChild(document.createTextNode(stock.country));
                   row.appendChild(cell);
-              });
+
+                  var cell = document.createElement('td');
+                  cell.appendChild(document.createTextNode(stock.isin));
+                  row.appendChild(cell);
+
+                  var cell = document.createElement('td');
+                  cell.appendChild(document.createTextNode(stock.title));
+                  row.appendChild(cell);
+
+                  var cell = document.createElement('td');
+				  if (stock.link == undefined || stock.link == '') {
+                  	cell.appendChild(document.createTextNode(stock.description));
+				  } else {
+                    var link = document.createElement('a');
+				  	link.setAttribute("href", stock.link)
+			        link.textContent = stock.description;
+				    cell.appendChild(link);
+				  }
+                  row.appendChild(cell);
+
       
               tableBody.appendChild(row);
           });
@@ -72,11 +222,9 @@
           table.appendChild(tableBody);
           document.body.appendChild(table);
     }
-    //createTable(data);
     </script>
   </head>
-  <!-- <body onload="createTable()">  -->
-  <body onload=""> 
+  <body onload="createTable()">
     <h1>Bumsbuden Weltkarte</h1>
     <div id="regions_div" style="width: 900px; height: 500px;"></div>
     <div id="info_box" />
