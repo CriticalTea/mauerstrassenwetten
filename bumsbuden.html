@@ -2,6 +2,7 @@
   <head>
     <title>Bumsbuden Weltkarte</title>
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript" src="stocks.js"></script>
     <script type="text/javascript">
       if (document.URL.startsWith("file://")) {
         apiKey = '';
@@ -14,123 +15,6 @@
         'mapsApiKey': apiKey,
       });
       google.charts.setOnLoadCallback(drawRegionsMap);
-
-      var stocks = [
-		  {
-		  country: 'South Africa',
-		  isin: 'ZAE000320321',
-		  title: 'Premier Group Limited',
-		  description: 'Bäckereien, Mühlen und Damenhygiene-Artikel',
-		  link: 'https://www.reddit.com/r/mauerstrassenwetten/comments/1cohxcy/wie_ich_einmal_fast_eine_b%C3%A4ckerei_in_s%C3%BCdafrika/'
-	  },
-          {
-		  country: 'China',
-		  isin: 'US8552441094',
-		  title: 'Luckin Coffee',
-		  description: 'DD: Wie ich einmal fast eine Bäckerei in Südafrika gekauft hätte...',
-		  link: 'https://www.reddit.com/r/mauerstrassenwetten/comments/1b9nv70/gl%C3%BCcklicher_kaffee_sternenb%C3%B6cke_bei_wunsch/'
-	  },
-          {
-		  country: 'Kazakhstan',
-		  isin: 'US48581R2058',
-		  title: 'Kaspi Bank',
-		  description: '',
-		  link: ''
-	  },
-          {
-		  country: 'Ukraine',
-		  isin: 'GB00B1XH2C03',
-		  title: 'Ferrexpo PLC',
-		  description: 'DD: Ukrainische Freiheitsaktie 🇺',
-		  link: 'https://www.reddit.com/r/mauerstrassenwetten/comments/1bhnh63/ukrainische_freiheitsaktie/'
-	  },
-          {
-		  country: 'Israel',
-		  isin: 'IL0011766354',
-		  title: 'Bull Trading and Investment Ltd',
-		  description: 'Qualitätsbrecher',
-		  link: 'https://www.reddit.com/r/mauerstrassenwetten/comments/1cemok6/dd_israelischer_qualit%C3%A4tsbrecher/'
-	  },
-
-          {
-		  country: 'US',
-		  isin: 'US9892071054',
-		  title: 'Zebra Technologies',
-		  description: 'Beliebtes Sarafi-Gelände',
-		  link: 'https://www.reddit.com/r/mauerstrassenwetten/comments/1ca8i4j/jagd_auf_rotes_zebra_teil_4/'
-	  },
-          {
-		  country: 'Canada', 
-		  isin: 'A1178T',
-		  title: 'Kinaxis Inc',
-		  description: 'Lieferkettenweichware',
-		  link: 'https://www.reddit.com/r/mauerstrassenwetten/comments/1bnd72h/lieferkettenweichware_macht_brrr/'
-	  },
-          {
-		  country: 'Greece',
-		  isin: '',
-		  title: 'Kri-Kri Milk Industry S.A.',
-		  description: 'DD: Griechischer Joghurt macht brrr',
-		  link: 'https://www.reddit.com/r/mauerstrassenwetten/comments/1behrcc/griechischer_joghurt_macht_brrr/'
-	  },
-          {
-		  country: 'France',
-		  isin: 'FR0000051732',
-		  title: 'ATOS',
-		  description: '',
-		  link: 'https://www.reddit.com/r/mauerstrassenwetten/comments/1amjgq6/notwendige_sorgfalt_atos/'
-	  },
-          {
-		  country: 'Germany',
-		  isin: '',
-		  title: 'Thyssen Krupp',
-		  description: 'DD: Thyssenkrupp, oder wie ich gelernt hab die „Bruchbude“ zu lieben! ',
-		  link: 'https://www.reddit.com/r/mauerstrassenwetten/comments/1amrzd9/thyssenkrupp_oder_wie_ich_gelernt_hab_die/'
-	  },
-          {
-		  country: 'Indonesia',
-		  isin: 'ID1000060007',
-		  title: 'Mayora Indah',
-		  description: 'Süßigkeiten',
-		  link: 'https://www.reddit.com/r/mauerstrassenwetten/comments/1cohxcy/comment/l3g0fja/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button'
-	  },
-	  {
-		  country: 'Argentina',
-		  isin: '',
-		  title: 'Cresud',
-		  description: 'Landwirtschaft',
-		  link: 'https://www.cresud.com.ar/index.php?lng=en'
-	  },
-	  {
-		  country: 'Brazil',
-		  isin: '',
-		  title: 'Lavoro',
-		  description: 'Landwirtschaft',
-		  link: 'https://ir.lavoroagro.com/'
-	  },
-	  {
-		  country: 'Hawaii',
-		  isin: '',
-		  title: 'Maui Land & Pineapple Company',
-		  description: 'Landwirtschaft',
-		  link: ''
-	  },
-	  {
-		  country: 'Australia',
-		  isin: '',
-		  title: 'Elders Limited',
-		  description: 'Landwirtschaft',
-		  link: ''
-	  },
-	  {
-		country: 'Estonia',
-		isin: '',
-		title: 'Arco Vara AS',
-		description: 'Immobilienbude mit Ex-Rennfahrer als CEO',
-		link: 'https://arcovara.com/en/'
-	  }
-          // {'Cayman Islands', 'KYG237731073', 'Consolidated Water', ' Karibische Meerwasserentsalzung macht brrr', 'https://www.reddit.com/r/mauerstrassenwetten/comments/1bihbrw/karibische_meerwasserentsalzung_macht_brrr/']
-      ]
 
       function drawRegionsMap() {
 		data = [['Country', 'Title']];
@@ -172,6 +56,11 @@
           var tableBody = document.createElement('tbody');
     
               var row = document.createElement('tr');
+
+                  var cell = document.createElement('th');
+				  cell.textContent = "Nr.";
+				  row.appendChild(cell);
+
                   var cell = document.createElement('th');
 				  cell.textContent = "Land";
 				  row.appendChild(cell);
@@ -189,11 +78,20 @@
 				  row.appendChild(cell);
 
               tableBody.appendChild(row);
+		  var number=1;
           stocks.forEach(function(stock) {
               var row = document.createElement('tr');
           
                   var cell = document.createElement('td');
-                  cell.appendChild(document.createTextNode(stock.country));
+                  cell.appendChild(document.createTextNode(number));
+                  row.appendChild(cell);
+				  number += 1;
+
+                  var cell = document.createElement('td');
+				  if (stock.countryDE == undefined) {
+					stock.countryDE = stock.country;
+				  }
+                  cell.appendChild(document.createTextNode(stock.countryDE));
                   row.appendChild(cell);
 
                   var cell = document.createElement('td');
