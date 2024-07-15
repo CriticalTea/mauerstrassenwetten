@@ -20,7 +20,7 @@
 		  countryDE: 'Kasachstan',
 		  isin: 'US48581R2058',
 		  title: 'Kaspi Bank',
-		  description: '',
+		  description: 'Kasachstanbande stronk!',
 		  link: ''
 	  },
           {
@@ -126,7 +126,7 @@
 		countryDE: 'Japan',
 		isin: 'JP3756600007',
 		title: 'Nintendo',
-		description: '',
+		description: 'Ein Stück Kindheit',
 		link: ''
 	  },
 	  {
