@@ -161,6 +161,22 @@
 		description: 'Anno 1800',
 		link: ''
 	  },
+	  {
+		country: 'Finland',
+		countryDE: 'Finnland',
+		isin: 'FI0009006308',
+		title: 'HKFoods Oyj',
+		description: 'Fleischerei-Produkte Nordeuropa für Retail',
+		link: ''
+	  },
+	  {
+		country: 'Norway',
+		countryDE: 'Norwegen',
+		isin: 'NO0011082075',
+		title: 'Höegh Autoliners',
+		description: 'r/Finanzen-Tipp, RoRo-Rederei, Transportiert vor allem Autos',
+		link: ''
+	  },
 	  /*
 	  {
 		country: '',
