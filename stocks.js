@@ -116,6 +116,7 @@
 	  },
       {
 		country:'Cayman Islands',
+		countryDE:'Cayman Islands',
 		 isin: 'KYG237731073',
 		 title: 'Consolidated Water',
 		 description: 'Karibische Meerwasserentsalzung macht brrr',

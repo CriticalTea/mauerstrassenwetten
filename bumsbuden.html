@@ -79,6 +79,7 @@
 
               tableBody.appendChild(row);
 		  var number=1;
+		  stocks.sort((a,b) => (a.countryDE < b.countryDE) ? -1 : 1);
           stocks.forEach(function(stock) {
               var row = document.createElement('tr');
           
