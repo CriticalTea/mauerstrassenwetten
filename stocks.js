@@ -178,6 +178,14 @@
 		description: 'r/Finanzen-Tipp, RoRo-Rederei, Transportiert vor allem Autos',
 		link: ''
 	  },
+	  {
+		country: 'Colombia',
+		countryDE: 'Kolumbien',
+		isin: 'US2791581091',
+		title: 'Ecopetrol',
+		description: 'Ölbumsbude, ehemals Empresa Colombiana de Petróleos S.A.',
+		link: 'https://www.reddit.com/r/mauerstrassenwetten/comments/1e4ctwz/comment/ldfoiku/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button'
+	  },
 	  /*
 	  {
 		country: '',
