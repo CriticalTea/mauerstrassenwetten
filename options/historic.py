@@ -80,9 +80,9 @@ for today in vix_dates:
         prices[today] = price
     # execute expired options
     for position in positions:
-        if position.option.expiration -timedelta(15) <= today:
+        if position.option.expiration <= today:
             positions.remove(position)
-            price = black_scholes_put_price(snp_today,position.option.strike,15/360,r, vix[today]['Close']/100.0)
+            price = black_scholes_put_price(snp_today,position.option.strike,0/360,r, vix[today]['Close']/100.0)
             if isinstance(position, Short):
                 put_profit = -1*price*position.option.size
             else:
