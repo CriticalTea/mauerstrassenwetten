@@ -1,0 +1,131 @@
+<html>
+  <head>
+    <title>Bumsbuden Weltkarte</title>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript" src="stocks.js"></script>
+    <script type="text/javascript">
+      if (document.URL.startsWith("file://")) {
+        apiKey = '';
+      } else {
+        apiKey = 'AIzaSyCjDdyfe5-a5sBmcFSJwxuVPWoO89UHXbs';
+      }
+      google.charts.load('current', {
+        'packages':['geochart'],
+        'language':'de',
+        'mapsApiKey': apiKey,
+      });
+      google.charts.setOnLoadCallback(drawRegionsMap);
+
+      function drawRegionsMap() {
+		data = [['Country', 'Title']];
+      stocks.forEach(stock => {
+            data.push([stock.country, stock.title]);
+        });
+        var map_data = google.visualization.arrayToDataTable(data);
+
+        var view = new google.visualization.DataView(map_data);
+        view.setColumns([0, {
+            type: 'number',
+            calc: function(data, row) {
+                var titleValue = data.getValue(row, 1);
+                //var titleValue = data.getValue(row, 3);
+                return {
+                    v: 1,
+                    f: titleValue 
+                };
+            }
+        }]);
+        var options = {};
+
+        var chart = new google.visualization.GeoChart(document.getElementById('regions_div'));
+		/*
+        google.visualization.events.addListener(chart, 'select', function() {
+            var selectionIdx = chart.getSelection()[0].row;
+            var title = map_data.getValue(selectionIdx, 2);
+            var link = map_data.getValue(selectionIdx, 4);
+            // window.open(link);
+            document.getElementById("info_box").innerHTML = title + "<br/><a href=\"" + link + "\" target=\"_blank\">"+link+"</a>";
+            //xconsole.log(map_data
+
+        });
+		*/
+        chart.draw(view, options);
+      }
+      function createTable() {
+          var table = document.createElement('table');
+          var tableBody = document.createElement('tbody');
+    
+              var row = document.createElement('tr');
+
+                  var cell = document.createElement('th');
+				  cell.textContent = "Nr.";
+				  row.appendChild(cell);
+
+                  var cell = document.createElement('th');
+				  cell.textContent = "Land";
+				  row.appendChild(cell);
+
+                  var cell = document.createElement('th');
+				  cell.textContent = "ISIN/WKN";
+				  row.appendChild(cell);
+
+                  var cell = document.createElement('th');
+				  cell.textContent = "Name";
+				  row.appendChild(cell);
+
+                  var cell = document.createElement('th');
+				  cell.textContent = "Beschreibung";
+				  row.appendChild(cell);
+
+              tableBody.appendChild(row);
+		  var number=1;
+		  stocks.sort((a,b) => (a.countryDE < b.countryDE) ? -1 : 1);
+          stocks.forEach(function(stock) {
+              var row = document.createElement('tr');
+          
+                  var cell = document.createElement('td');
+                  cell.appendChild(document.createTextNode(number));
+                  row.appendChild(cell);
+				  number += 1;
+
+                  var cell = document.createElement('td');
+				  if (stock.countryDE == undefined) {
+					stock.countryDE = stock.country;
+				  }
+                  cell.appendChild(document.createTextNode(stock.countryDE));
+                  row.appendChild(cell);
+
+                  var cell = document.createElement('td');
+                  cell.appendChild(document.createTextNode(stock.isin));
+                  row.appendChild(cell);
+
+                  var cell = document.createElement('td');
+                  cell.appendChild(document.createTextNode(stock.title));
+                  row.appendChild(cell);
+
+                  var cell = document.createElement('td');
+				  if (stock.link == undefined || stock.link == '') {
+                  	cell.appendChild(document.createTextNode(stock.description));
+				  } else {
+                    var link = document.createElement('a');
+				  	link.setAttribute("href", stock.link)
+			        link.textContent = stock.description;
+				    cell.appendChild(link);
+				  }
+                  row.appendChild(cell);
+
+      
+              tableBody.appendChild(row);
+          });
+      
+          table.appendChild(tableBody);
+          document.body.appendChild(table);
+    }
+    </script>
+  </head>
+  <body onload="createTable()">
+    <h1>Bumsbuden Weltkarte</h1>
+    <div id="regions_div" style="width: 900px; height: 500px;"></div>
+    <div id="info_box" />
+  </body>
+</html>

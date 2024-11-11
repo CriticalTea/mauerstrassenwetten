@@ -1,0 +1,214 @@
+<html>
+  <head>
+    <title>Brecher Weltkarte</title>
+    <link rel=""stylesheet" href="style.css" />
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      console.log(document.URL.startsWith("file:///"));
+      if (document.URL.startsWith("file://")) {
+        apiKey = '';
+      } else {
+        apiKey = 'AIzaSyCjDdyfe5-a5sBmcFSJwxuVPWoO89UHXbs';
+      }
+      google.charts.load('current', {
+        'packages':['geochart'],
+        'language':'de',
+        'mapsApiKey': apiKey,
+      });
+      google.charts.setOnLoadCallback(drawRegionsMap);
+      
+      var data = [
+          ['Country', 'Broker', 'Confirmed'],
+      ];
+
+      brokers = [
+        {
+          name: "Freedom24 EU", 
+          link: 'https://freedom24.com/',
+          confirmed: true,
+          comment: 'Viele Börsen nur wenige Aktien. Vermutlich durch die kostenlose API automatisierbar. Eventuell mehr Handelsplätze über die API',
+          countries:['Cyprus', 'Kazakhstan', 'Ukraine', 'Russia']
+        },
+        {
+          name: "EFG Hermes One",
+          link: 'https://www.efghermesone.com/',
+          confirmed: true,
+          comment: 'Man muss den Antrag auf Papier stellen lel',
+          countries:['Abu Dhabi', 'Egypt', 'Dubai', 'Jordania', 'Kenya', 'Kuwait', 'Nigeria', 'Oman', 'Pakistan']
+        },
+        {
+          name: "TDB Securities", 
+          link: 'https://www.tdbsecurities.mn/?lang=en',
+          confirmed: false,
+          comment: 'Bonus: Man kann ungelistete und IPOs von mongolischen Minen kaufen! Zumindest Mongolen kaufen da auch direkt in Kiner.',
+          countries:['India', 'South Africa', 'Mongolia', 'South Korea']
+        },
+        {
+          name: "Easy Equities", 
+          link: 'https://www.easyequities.co.za/',
+          confirmed: true,
+          comment: '',
+          countries:['South Africa']
+        },
+        {
+          name: "Stanbic",
+          link: 'https://www.standardbank.com/sbg/standard-bank-group',
+          confirmed: false,
+          comment: 'Regeln hängen davon ab, wo man den Account macht. Botswana,Ghana oder Nigeria vermutlich am Einfachsten',
+          countries:['Botswana', 'Ghana', 'Kenya', 'Malawi', 'Nigeria', 'Tanzania', 'Uganda', 'Zambia', 'Zimbabwe']
+        },
+        {
+          name: "IBKR",
+          link: 'https://www.interactivebrokers.com/en/home.php',
+          confirmed: true,
+          comment: 'Beste',
+          countries: ['Australia', 'Hong Kong', 'Japan', 'Canada', 'United Kingdom', 'Belgium', 'Czech Republic', 'France', 'Germany', 'Hungary', 'Spain', 'Italy', 'Netherlands', 'Poland', 'Portugal', 'Switzerland', 'Mexico', 'Nasdaq Baltic', 'Estonia', 'Latvia', 'Lithuania', 'OMX', 'Sweden', 'Norway', 'Finland', 'Denmark', 'Iceland', 'Singapore', 'South Korea', 'Taiwan', 'Israel', 'US', 'Poland', 'Austria']
+        },
+        {
+          name: "Saxo", 
+          link: 'https://www.home.saxo/',
+          confirmed: true,
+          comment: 'Hat MIL Star. Gibt auch Shenzhen und Shanghai an, das ist aber sicher nur HK-SEHK Connect wie bei IBKR',
+          countries:['USA', 'Netzerlands', 'Australia', 'Greece', 'South Africa', 'Canada', 'Malaysia', 'Poland', 'Switzerland', 'CZ']
+        },
+        {
+          name: "Degiro",
+          link: 'https://www.degiro.com/',
+          confirmed: true,
+          comment: 'Sind manchmal dumm und erlauben manche US-ETF',
+          countries:['Poland', 'CZ', 'Hungary', 'Turkey']
+        }
+      ];
+
+      brokers.forEach(broker => {
+        broker.countries.forEach( country => {
+          element = data.find((el) => el[0] == country);
+          if (element === undefined) {
+            console.log("add new " + country + " " + broker.name + " " + broker.confirmed);
+            data.push([country, broker.name, broker.confirmed]);
+          } else {
+            // element[1].push(broker.name);// += ", " + broker.name;
+            element[1] += ", " + broker.name;
+            element[2] = broker.confirmed || element[2]
+            console.log("append new " + country + ". new " + element[1] + " " + element[2]);
+
+          }
+        });
+      });
+
+      function drawRegionsMap() {
+        var map_data = google.visualization.arrayToDataTable(data);
+
+        var view = new google.visualization.DataView(map_data);
+        view.setColumns([0, {
+            type: 'number',
+            calc: function(data, row) {
+                var broker_names = data.getValue(row, 1);
+                var confirmed = data.getValue(row, 2);
+                //var titleValue = data.getValue(row, 3);
+                return {
+                    v: confirmed ? 1 : 0,
+                    f: broker_names
+                };
+            }
+        }]);
+        options = {
+          'colorAxis': {colors: ['yellow', 'green']},
+          legend: 'none',
+	  magnifyingGlass : { enable: true, zoomFactor: 5}
+        }
+
+        var chart = new google.visualization.GeoChart(document.getElementById('regions_div'));
+        google.visualization.events.addListener(chart, 'select', function() {
+          console.debug(chart.getSelection())
+            var selection = chart.getSelection();
+            if (selection.length == 0) {
+              country = '';
+            } else {
+              selectionIdx = selection[0].row;
+              var country = map_data.getValue(selectionIdx, 0);
+            }
+            document.getElementById("myInput").value = country;
+            search();
+        });
+        chart.draw(view, options);
+      }
+      function createTable() {
+          var table = document.getElementById('myTable');
+          var tableBody = document.createElement('tbody');
+    
+          var row = document.createElement('tr');
+
+          var cell = document.createElement('th');
+          cell.appendChild(document.createTextNode("Brecher"));
+          row.appendChild(cell);
+      
+          var cell = document.createElement('th');
+          cell.appendChild(document.createTextNode("Länder"));
+          row.appendChild(cell);
+      
+          var cell = document.createElement('th');
+          cell.appendChild(document.createTextNode("Bestätigt"));
+          row.appendChild(cell);
+      
+          var cell = document.createElement('th');
+          cell.appendChild(document.createTextNode("Kommentare"));
+          row.appendChild(cell);
+
+          tableBody.appendChild(row);
+      
+          brokers.forEach(function(broker) {
+              var row = document.createElement('tr');
+          
+              var cell = document.createElement('td');
+              cell.innerHTML = "<a href=\"" + broker.link + "\">" + broker.name + "</a>";
+              // cell.appendChild(document.create(broker.name));
+              row.appendChild(cell);
+      
+              var cell = document.createElement('td');
+              cell.appendChild(document.createTextNode(broker.countries.join(", ")));
+              row.appendChild(cell);
+      
+              var cell = document.createElement('td');
+              cell.appendChild(document.createTextNode(broker.confirmed ? "ja" : "nein"));
+              row.appendChild(cell);
+      
+              var cell = document.createElement('td');
+              cell.appendChild(document.createTextNode(broker.comment));
+              row.appendChild(cell);
+      
+              tableBody.appendChild(row);
+          });
+      
+          table.appendChild(tableBody);
+          document.body.appendChild(table);
+      }
+      function search() {
+        input = document.getElementById("myInput");
+        filter = input.value.toUpperCase();
+        table = document.getElementById("myTable");
+        tr = table.getElementsByTagName("tr");
+      
+        // Loop through all table rows, and hide those who don't match the search query
+        for (i = 1; i < tr.length; i++) {
+          tds = tr[i].getElementsByTagName("td");
+          if (tds == undefined) continue;
+          txtValue = (tds[0].textContent || tds[0].innerText) + (tds[1].textContent || tds[1].innerText);
+          if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            tr[i].style.display = "";
+          } else {
+            tr[i].style.display = "none";
+          }
+        }  
+      }
+    </script>
+  </head>
+  <body onload="createTable()">
+  <!-- <body onload="">  -->
+    <h1>Brecher Weltkarte</h1>
+    <div id="regions_div" style="width: 900px; height: 500px;"></div>
+    <div id="info_box" />
+     <input type="text" id="myInput" onkeyup="search()" placeholder="Durchsuche Tabelle...">
+     <table id="myTable"></table>
+  </body>
+</html>
