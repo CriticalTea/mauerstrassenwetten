@@ -1,0 +1,1168 @@
+{
+    "scoreboard": "1ggb43d",
+    "bets": [
+        {
+            "id": "1gn8cug",
+            "description": "Wer wird MSW'ler des Monats im November? [Hier](https://www.reddit.com/r/mauerstrassenwetten/comments/1gmf206/mswler_des_monats_finale_abstimmung/) geht's zur Abstimmung",
+            "due": "2024-11-14 18:00",
+            "options": {
+                "!AmdonArt": {
+                    "title": "AmdonArt gewinnt die Wahl",
+                    "basePoints": 980
+                },
+                "!Tea": {
+                    "title": "Critical_Tea_1337 gewinnt die Wahl",
+                    "basePoints": 270
+                },
+                "!Kreditkarte": {
+                    "title": "papas-kreditkarte gewinnt die Wahl",
+                    "basePoints": 170
+                },
+                "!Doktor": {
+                    "title": "doktorfomo gewinnt die Wahl",
+                    "basePoints": 90
+                },
+                "!Ramit": {
+                    "title": "RamitInmashol1994 gewinnt die Wahl",
+                    "basePoints": 140
+                }
+            },
+            "stakes": {
+                "lw8imw5": {
+                    "user": "Critical_Tea_1337",
+                    "option": "!AmdonArt",
+                    "points": 500,
+                    "ratio": 1.7
+                },
+                "lw8inqf": {
+                    "user": "Critical_Tea_1337",
+                    "option": "!Ramit",
+                    "points": 200,
+                    "ratio": 15.4
+                },
+                "lw8isv9": {
+                    "user": "Unbannbare",
+                    "option": "!AmdonArt",
+                    "points": 100,
+                    "ratio": 1.6
+                },
+                "lw8jj7b": {
+                    "user": "__MDMX__",
+                    "option": "!AmdonArt",
+                    "points": 700,
+                    "ratio": 1.6
+                },
+                "lw8jsl3": {
+                    "user": "Own_Incident4641",
+                    "option": "!AmdonArt",
+                    "points": 800,
+                    "ratio": 1.4
+                },
+                "lw8lvtw": {
+                    "user": "Benerfan",
+                    "option": "!AmdonArt",
+                    "points": 950,
+                    "ratio": 1.3
+                },
+                "lw8lwxq": {
+                    "user": "Benerfan",
+                    "option": "!Tea",
+                    "points": 50,
+                    "ratio": 14.6
+                },
+                "lw8m3by": {
+                    "user": "Kobil55",
+                    "option": "!AmdonArt",
+                    "points": 1000,
+                    "ratio": 1.2
+                },
+                "lw8n8xj": {
+                    "user": "_00Schneider",
+                    "option": "!AmdonArt",
+                    "points": 1000,
+                    "ratio": 1.2
+                },
+                "lw8nar4": {
+                    "user": "GaryJohnson99",
+                    "option": "!AmdonArt",
+                    "points": 100,
+                    "ratio": 1.2
+                },
+                "lw8nwlf": {
+                    "user": "e-dent",
+                    "option": "!AmdonArt",
+                    "points": 500,
+                    "ratio": 1.2
+                },
+                "lw8ogem": {
+                    "user": "papas-kreditkarte",
+                    "option": "!AmdonArt",
+                    "points": 1000,
+                    "ratio": 1.1
+                },
+                "lw8opnx": {
+                    "user": "_schon_vergeben",
+                    "option": "!AmdonArt",
+                    "points": 1000,
+                    "ratio": 1.1
+                },
+                "lw8p0zt": {
+                    "user": "Divad-_-8891",
+                    "option": "!AmdonArt",
+                    "points": 1000,
+                    "ratio": 1.1
+                },
+                "lw8pn7c": {
+                    "user": "Windes1",
+                    "option": "!AmdonArt",
+                    "points": 1000,
+                    "ratio": 1.1
+                },
+                "lw8sfev": {
+                    "user": "Informal-Banana-4715",
+                    "option": "!AmdonArt",
+                    "points": 1000,
+                    "ratio": 1.1
+                },
+                "lw8t03j": {
+                    "user": "monchella420",
+                    "option": "!AmdonArt",
+                    "points": 1000,
+                    "ratio": 1.1
+                },
+                "lw8tev8": {
+                    "user": "Pichelmann",
+                    "option": "!AmdonArt",
+                    "points": 1000,
+                    "ratio": 1.1
+                },
+                "lw8u6g6": {
+                    "user": "RagingMaxy",
+                    "option": "!AmdonArt",
+                    "points": 1000,
+                    "ratio": 1.1
+                },
+                "lw8wgeq": {
+                    "user": "Battleham_117",
+                    "option": "!AmdonArt",
+                    "points": 1000,
+                    "ratio": 1.1
+                },
+                "lw8xjxv": {
+                    "user": "bearrowell",
+                    "option": "!AmdonArt",
+                    "points": 420,
+                    "ratio": 1.1
+                },
+                "lw8y3rj": {
+                    "user": "BenderDeLorean",
+                    "option": "!AmdonArt",
+                    "points": 1000,
+                    "ratio": 1.1
+                },
+                "lw91w74": {
+                    "user": "hgmnkn",
+                    "option": "!AmdonArt",
+                    "points": 1000,
+                    "ratio": 1.1
+                },
+                "lw95lmm": {
+                    "user": "ShoulderDangerous898",
+                    "option": "!AmdonArt",
+                    "points": 723,
+                    "ratio": 1.1
+                },
+                "lw95smn": {
+                    "user": "ShoulderDangerous898",
+                    "option": "!Tea",
+                    "points": 157,
+                    "ratio": 61.5
+                },
+                "lw95w8o": {
+                    "user": "ShoulderDangerous898",
+                    "option": "!Ramit",
+                    "points": 120,
+                    "ratio": 58.4
+                },
+                "lw9ghpd": {
+                    "user": "Ciffu",
+                    "option": "!AmdonArt",
+                    "points": 500,
+                    "ratio": 1.1
+                },
+                "lw9if81": {
+                    "user": "Plastic_Sentence6154",
+                    "option": "!AmdonArt",
+                    "points": 1000,
+                    "ratio": 1.1
+                },
+                "lw9m7ij": {
+                    "user": "M-To-The-O",
+                    "option": "!AmdonArt",
+                    "points": 1000,
+                    "ratio": 1.1
+                },
+                "lw9o1oe": {
+                    "user": "Rexobe",
+                    "option": "!AmdonArt",
+                    "points": 1000,
+                    "ratio": 1.1
+                },
+                "lw9w2ml": {
+                    "user": "JosefBanane",
+                    "option": "!AmdonArt",
+                    "points": 1000,
+                    "ratio": 1.1
+                },
+                "lw9xem9": {
+                    "user": "JustATr8er",
+                    "option": "!Tea",
+                    "points": 300,
+                    "ratio": 51.3
+                },
+                "lwajmdw": {
+                    "user": "can1as",
+                    "option": "!AmdonArt",
+                    "points": 1000,
+                    "ratio": 1.1
+                },
+                "lwak2yh": {
+                    "user": "Pazuzu539",
+                    "option": "!AmdonArt",
+                    "points": 1000,
+                    "ratio": 1.1
+                },
+                "lw9zxv6": {
+                    "user": "schalker1207",
+                    "option": "!AmdonArt",
+                    "points": 1000,
+                    "ratio": 1.1
+                },
+                "lw8k7rn": {
+                    "user": "toilet_with_reddit",
+                    "option": "!Tea",
+                    "points": 500,
+                    "ratio": 35.7
+                },
+                "lw8ja7c": {
+                    "user": "pigeonpls",
+                    "option": "!AmdonArt",
+                    "points": 100,
+                    "ratio": 1.1
+                },
+                "lwcfmf2": {
+                    "user": "Philipp_CGN",
+                    "option": "!AmdonArt",
+                    "points": 1000,
+                    "ratio": 1.1
+                },
+                "lwe7f21": {
+                    "user": "The_Keri2",
+                    "option": "!Doktor",
+                    "points": 10,
+                    "ratio": 326.3
+                },
+                "lwebu3w": {
+                    "user": "Critical_Tea_1337",
+                    "option": "!Ramit",
+                    "points": 1,
+                    "ratio": 63.9
+                }
+            }
+        },
+        {
+            "id": "1gfvwpw",
+            "description": "Kommt Shaiden Rogue morgen (31. Oktober) in den Podcast?",
+            "due": "2024-10-30 22:00",
+            "result": "!Ja",
+            "options": {
+                "!Ja": {
+                    "title": "Shaiden Rogue kommt morgen im... \u00c3\u00a4h in den Podcast!",
+                    "basePoints": 45
+                },
+                "!Nein": {
+                    "title": "Morgen kommt ein anderer Gast!",
+                    "basePoints": 45
+                },
+                "!KeineFolge": {
+                    "title": "Morgen kommt gar keine Folge",
+                    "basePoints": 10
+                }
+            },
+            "stakes": {
+                "lukwq6i": {
+                    "user": "Critical_Tea_1337",
+                    "option": "!Ja",
+                    "points": 900,
+                    "ratio": 2.2,
+                    "winloss": 1080.0000000000002
+                },
+                "lukwz7v": {
+                    "user": "Critical_Tea_1337",
+                    "option": "!KeineFolge",
+                    "points": 100,
+                    "ratio": 100.0,
+                    "winloss": -100
+                },
+                "lukxxcd": {
+                    "user": "RagingMaxy",
+                    "option": "!Ja",
+                    "points": 900,
+                    "ratio": 1.2,
+                    "winloss": 179.99999999999997
+                },
+                "lukxxmc": {
+                    "user": "M4chsi",
+                    "option": "!Nein",
+                    "points": 1000,
+                    "ratio": 24.4,
+                    "winloss": -1000
+                },
+                "luky0ty": {
+                    "user": "JosefBanane",
+                    "option": "!Nein",
+                    "points": 50,
+                    "ratio": 24.4,
+                    "winloss": -50
+                },
+                "luky9iy": {
+                    "user": "iamez221",
+                    "option": "!Nein",
+                    "points": 1000,
+                    "ratio": 2.8,
+                    "winloss": -1000
+                },
+                "lukycqz": {
+                    "user": "BenderDeLorean",
+                    "option": "!Nein",
+                    "points": 690,
+                    "ratio": 1.9,
+                    "winloss": -690
+                },
+                "lukysye": {
+                    "user": "NurAndy",
+                    "option": "!KeineFolge",
+                    "points": 1000,
+                    "ratio": 43.1,
+                    "winloss": -1000
+                },
+                "lukz5hj": {
+                    "user": "Benerfan",
+                    "option": "!Ja",
+                    "points": 400,
+                    "ratio": 3.1,
+                    "winloss": 840.0
+                },
+                "lukzc1m": {
+                    "user": "__MDMX__",
+                    "option": "!Ja",
+                    "points": 200,
+                    "ratio": 2.7,
+                    "winloss": 340.00000000000006
+                },
+                "lukzkdz": {
+                    "user": "Kobil55",
+                    "option": "!Ja",
+                    "points": 1000,
+                    "ratio": 2.6,
+                    "winloss": 1600.0
+                },
+                "lukzr2p": {
+                    "user": "xTheKronos",
+                    "option": "!Ja",
+                    "points": 500,
+                    "ratio": 2.1,
+                    "winloss": 550.0
+                },
+                "lul04i0": {
+                    "user": "e-dent",
+                    "option": "!KeineFolge",
+                    "points": 300,
+                    "ratio": 7.1,
+                    "winloss": -300
+                },
+                "lul08kq": {
+                    "user": "CannaMain",
+                    "option": "!KeineFolge",
+                    "points": 1000,
+                    "ratio": 5.8,
+                    "winloss": -1000
+                },
+                "lul0u8l": {
+                    "user": "for_a_dime",
+                    "option": "!KeineFolge",
+                    "points": 1000,
+                    "ratio": 3.8,
+                    "winloss": -1000
+                }
+            }
+        },
+        {
+            "id": "1gaj60l",
+            "description": "Wer gewinnt die Wahl? Kamala Harris oder Donald Trump?\n\nMehr Details in [diesem Kommentar](https://www.reddit.com/r/mauerstrassenwetten/comments/1gaj60l/comment/lte528q/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button)",
+            "due": "2024-11-05 00:00",
+            "result": "!Trump",
+            "options": {
+                "!Harris": {
+                    "title": "Kamala Harris gewinnt",
+                    "basePoints": 1000
+                },
+                "!Trump": {
+                    "title": "Donald Trump gewinnt",
+                    "basePoints": 1000
+                }
+            },
+            "stakes": {
+                "lte7lan": {
+                    "user": "Critical_Tea_1337",
+                    "option": "!Harris",
+                    "points": 500,
+                    "ratio": 2.0,
+                    "winloss": -500
+                },
+                "ltecj60": {
+                    "user": "BiccepsBrachiali",
+                    "option": "!Trump",
+                    "points": 1,
+                    "ratio": 2.5,
+                    "winloss": 1.5
+                },
+                "lted04x": {
+                    "user": "Windes1",
+                    "option": "!Harris",
+                    "points": 1000,
+                    "ratio": 1.7,
+                    "winloss": -1000
+                },
+                "lted1ik": {
+                    "user": "jamneister",
+                    "option": "!Trump",
+                    "points": 420,
+                    "ratio": 3.5,
+                    "winloss": 1050.0
+                },
+                "ltee53y": {
+                    "user": "Most-Ad9324",
+                    "option": "!Trump",
+                    "points": 1000,
+                    "ratio": 2.8,
+                    "winloss": 1799.9999999999998
+                },
+                "ltegpy8": {
+                    "user": "MrPopanz",
+                    "option": "!Trump",
+                    "points": 1000,
+                    "ratio": 2.0,
+                    "winloss": 1000.0
+                },
+                "ltehf7w": {
+                    "user": "Consistent-Bull",
+                    "option": "!Trump",
+                    "points": 1000,
+                    "ratio": 1.7,
+                    "winloss": 700.0
+                },
+                "lteiixw": {
+                    "user": "for_a_dime",
+                    "option": "!Harris",
+                    "points": 500,
+                    "ratio": 2.8,
+                    "winloss": -500
+                },
+                "ltej013": {
+                    "user": "for_a_dime",
+                    "option": "!Trump",
+                    "points": 500,
+                    "ratio": 1.7,
+                    "winloss": 350.0
+                },
+                "ltej13a": {
+                    "user": "sw0oOosh",
+                    "option": "!Harris",
+                    "points": 500,
+                    "ratio": 2.6,
+                    "winloss": -500
+                },
+                "ltejs1d": {
+                    "user": "Suchka666",
+                    "option": "!Trump",
+                    "points": 666,
+                    "ratio": 1.7,
+                    "winloss": 466.2
+                },
+                "lten4nz": {
+                    "user": "_00Schneider",
+                    "option": "!Trump",
+                    "points": 1000,
+                    "ratio": 1.6,
+                    "winloss": 600.0000000000001
+                },
+                "lteo7q6": {
+                    "user": "BenderDeLorean",
+                    "option": "!Harris",
+                    "points": 690,
+                    "ratio": 2.9,
+                    "winloss": -690
+                },
+                "lteo8hb": {
+                    "user": "Pazuzu539",
+                    "option": "!Harris",
+                    "points": 1000,
+                    "ratio": 2.6,
+                    "winloss": -1000
+                },
+                "ltep5op": {
+                    "user": "Gommemode2015",
+                    "option": "!Trump",
+                    "points": 1000,
+                    "ratio": 1.8,
+                    "winloss": 800.0
+                },
+                "ltep5rp": {
+                    "user": "12345678301234567890",
+                    "option": "!Harris",
+                    "points": 1000,
+                    "ratio": 2.3,
+                    "winloss": -1000
+                },
+                "ltep7qo": {
+                    "user": "ImageDramatic9755",
+                    "option": "!Harris",
+                    "points": 500,
+                    "ratio": 2.3,
+                    "winloss": -500
+                },
+                "ltepv30": {
+                    "user": "J_SMoke",
+                    "option": "!Harris",
+                    "points": 1000,
+                    "ratio": 2.3,
+                    "winloss": -1000
+                },
+                "lteqfkl": {
+                    "user": "papas-kreditkarte",
+                    "option": "!Harris",
+                    "points": 1000,
+                    "ratio": 2.3,
+                    "winloss": -1000
+                },
+                "ltet4wj": {
+                    "user": "Embarrassed_Fox_9998",
+                    "option": "!Harris",
+                    "points": 420,
+                    "ratio": 2.3,
+                    "winloss": -420
+                },
+                "lteumb1": {
+                    "user": "Maltejey",
+                    "option": "!Harris",
+                    "points": 1000,
+                    "ratio": 2.3,
+                    "winloss": -1000
+                },
+                "lteyfho": {
+                    "user": "i-am-steve",
+                    "option": "!Harris",
+                    "points": 700,
+                    "ratio": 2.3,
+                    "winloss": -700
+                },
+                "ltf0dh6": {
+                    "user": "Benerfan",
+                    "option": "!Harris",
+                    "points": 750,
+                    "ratio": 2.3,
+                    "winloss": -750
+                },
+                "ltf0f4b": {
+                    "user": "schalker1207",
+                    "option": "!Harris",
+                    "points": 1000,
+                    "ratio": 2.3,
+                    "winloss": -1000
+                },
+                "ltf4qhg": {
+                    "user": "Carstencarstetanders",
+                    "option": "!Harris",
+                    "points": 750,
+                    "ratio": 1.6,
+                    "winloss": -750
+                },
+                "ltf7kml": {
+                    "user": "Resident_General7721",
+                    "option": "!Trump",
+                    "points": 1000,
+                    "ratio": 2.8,
+                    "winloss": 1799.9999999999998
+                },
+                "ltfb67w": {
+                    "user": "Pichelmann",
+                    "option": "!Harris",
+                    "points": 1000,
+                    "ratio": 1.6,
+                    "winloss": -1000
+                },
+                "ltfcwys": {
+                    "user": "DeinVermieter",
+                    "option": "!Harris",
+                    "points": 1000,
+                    "ratio": 1.6,
+                    "winloss": -1000
+                },
+                "ltffbzo": {
+                    "user": "Numinextherealone",
+                    "option": "!Harris",
+                    "points": 1000,
+                    "ratio": 1.6,
+                    "winloss": -1000
+                },
+                "ltgnbgj": {
+                    "user": "mitch3001",
+                    "option": "!Harris",
+                    "points": 1000,
+                    "ratio": 1.5,
+                    "winloss": -1000
+                },
+                "ltgrvn9": {
+                    "user": "JustATr8er",
+                    "option": "!Trump",
+                    "points": 1000,
+                    "ratio": 3.0,
+                    "winloss": 2000.0
+                },
+                "ltgsvu5": {
+                    "user": "new_baltic_german",
+                    "option": "!Trump",
+                    "points": 1000,
+                    "ratio": 2.8,
+                    "winloss": 1799.9999999999998
+                },
+                "ltgta68": {
+                    "user": "LowEndHolger",
+                    "option": "!Harris",
+                    "points": 1000,
+                    "ratio": 1.6,
+                    "winloss": -1000
+                },
+                "ltguinb": {
+                    "user": "iamez221",
+                    "option": "!Trump",
+                    "points": 1000,
+                    "ratio": 2.7,
+                    "winloss": 1700.0000000000002
+                },
+                "ltgxvj3": {
+                    "user": "MinimalistApe",
+                    "option": "!Trump",
+                    "points": 500,
+                    "ratio": 2.6,
+                    "winloss": 800.0
+                },
+                "ltgyqmc": {
+                    "user": "Schneppsle",
+                    "option": "!Trump",
+                    "points": 1000,
+                    "ratio": 2.5,
+                    "winloss": 1500.0
+                },
+                "ltgysah": {
+                    "user": "FinanceEfficient",
+                    "option": "!Trump",
+                    "points": 1000,
+                    "ratio": 2.5,
+                    "winloss": 1500.0
+                },
+                "lth046o": {
+                    "user": "lunch431",
+                    "option": "!Harris",
+                    "points": 1000,
+                    "ratio": 1.8,
+                    "winloss": -1000
+                },
+                "lth11ro": {
+                    "user": "Konrad_UwU",
+                    "option": "!Harris",
+                    "points": 750,
+                    "ratio": 1.8,
+                    "winloss": -750
+                },
+                "lth24wk": {
+                    "user": "Nutzername-1",
+                    "option": "!Trump",
+                    "points": 500,
+                    "ratio": 2.4,
+                    "winloss": 700.0
+                },
+                "lth3ej4": {
+                    "user": "StreetTrial69",
+                    "option": "!Harris",
+                    "points": 1000,
+                    "ratio": 1.7,
+                    "winloss": -1000
+                },
+                "lth3ult": {
+                    "user": "SilenzShadow",
+                    "option": "!Harris",
+                    "points": 1000,
+                    "ratio": 1.7,
+                    "winloss": -1000
+                },
+                "lth4nxo": {
+                    "user": "Avanixh",
+                    "option": "!Trump",
+                    "points": 1000,
+                    "ratio": 2.5,
+                    "winloss": 1500.0
+                },
+                "lth56e1": {
+                    "user": "Ans3lm",
+                    "option": "!Harris",
+                    "points": 1000,
+                    "ratio": 1.7,
+                    "winloss": -1000
+                },
+                "lth6cyv": {
+                    "user": "hgmnkn",
+                    "option": "!Harris",
+                    "points": 1000,
+                    "ratio": 1.7,
+                    "winloss": -1000
+                },
+                "lth6da9": {
+                    "user": "ShoulderDangerous898",
+                    "option": "!Harris",
+                    "points": 1000,
+                    "ratio": 1.7,
+                    "winloss": -1000
+                },
+                "lth85dj": {
+                    "user": "Kotzmaschine",
+                    "option": "!Harris",
+                    "points": 750,
+                    "ratio": 1.7,
+                    "winloss": -750
+                },
+                "lth8x75": {
+                    "user": "manyonus",
+                    "option": "!Harris",
+                    "points": 1000,
+                    "ratio": 1.7,
+                    "winloss": -1000
+                },
+                "lth9cz4": {
+                    "user": "tobideve",
+                    "option": "!Harris",
+                    "points": 1000,
+                    "ratio": 1.7,
+                    "winloss": -1000
+                },
+                "lth9ey1": {
+                    "user": "LilAstra",
+                    "option": "!Trump",
+                    "points": 1000,
+                    "ratio": 2.5,
+                    "winloss": 1500.0
+                },
+                "lthaxui": {
+                    "user": "Latter_Bluejay_2809",
+                    "option": "!Trump",
+                    "points": 500,
+                    "ratio": 2.5,
+                    "winloss": 750.0
+                },
+                "lthbtuh": {
+                    "user": "brots4ck",
+                    "option": "!Trump",
+                    "points": 1000,
+                    "ratio": 2.5,
+                    "winloss": 1500.0
+                },
+                "lthe0q9": {
+                    "user": "Styx2907",
+                    "option": "!Trump",
+                    "points": 100,
+                    "ratio": 2.5,
+                    "winloss": 150.0
+                },
+                "lthe5se": {
+                    "user": "3l3s3",
+                    "option": "!Harris",
+                    "points": 1000,
+                    "ratio": 1.7,
+                    "winloss": -1000
+                },
+                "lthe6v1": {
+                    "user": "Glitzerina",
+                    "option": "!Trump",
+                    "points": 1000,
+                    "ratio": 2.5,
+                    "winloss": 1500.0
+                },
+                "lthfgjr": {
+                    "user": "EureHoheit",
+                    "option": "!Trump",
+                    "points": 1000,
+                    "ratio": 2.5,
+                    "winloss": 1500.0
+                },
+                "lthgdtk": {
+                    "user": "LazyHospital3613",
+                    "option": "!Harris",
+                    "points": 1000,
+                    "ratio": 1.7,
+                    "winloss": -1000
+                },
+                "lthhuzl": {
+                    "user": "NoSenpaiNoHentai",
+                    "option": "!Harris",
+                    "points": 1000,
+                    "ratio": 1.7,
+                    "winloss": -1000
+                },
+                "lthj3w6": {
+                    "user": "checkmate-9",
+                    "option": "!Trump",
+                    "points": 1000,
+                    "ratio": 2.5,
+                    "winloss": 1500.0
+                },
+                "lthj7k6": {
+                    "user": "Lynustxt",
+                    "option": "!Harris",
+                    "points": 1000,
+                    "ratio": 1.7,
+                    "winloss": -1000
+                },
+                "lthkdw6": {
+                    "user": "universalgenie42",
+                    "option": "!Trump",
+                    "points": 1000,
+                    "ratio": 2.5,
+                    "winloss": 1500.0
+                },
+                "lthkfpf": {
+                    "user": "Majestic_Proposal_56",
+                    "option": "!Trump",
+                    "points": 1000,
+                    "ratio": 2.5,
+                    "winloss": 1500.0
+                },
+                "lthkrir": {
+                    "user": "Schnoldi",
+                    "option": "!Trump",
+                    "points": 1000,
+                    "ratio": 2.5,
+                    "winloss": 1500.0
+                },
+                "lthp6w9": {
+                    "user": "Inkompetent_187",
+                    "option": "!Harris",
+                    "points": 1000,
+                    "ratio": 1.8,
+                    "winloss": -1000
+                },
+                "lthqhf4": {
+                    "user": "_schon_vergeben",
+                    "option": "!Trump",
+                    "points": 1000,
+                    "ratio": 2.4,
+                    "winloss": 1400.0
+                },
+                "lthru74": {
+                    "user": "GambIingAddict",
+                    "option": "!Harris",
+                    "points": 1000,
+                    "ratio": 1.7,
+                    "winloss": -1000
+                },
+                "lthsdwe": {
+                    "user": "DeinVaterHeult",
+                    "option": "!Trump",
+                    "points": 1000,
+                    "ratio": 2.3,
+                    "winloss": 1299.9999999999998
+                },
+                "lthuhyv": {
+                    "user": "maxneuds",
+                    "option": "!Harris",
+                    "points": 1000,
+                    "ratio": 1.8,
+                    "winloss": -1000
+                },
+                "lthuja6": {
+                    "user": "FritzoA7V",
+                    "option": "!Trump",
+                    "points": 700,
+                    "ratio": 2.3,
+                    "winloss": 909.9999999999999
+                },
+                "lthvx1u": {
+                    "user": "No_Pineapple630",
+                    "option": "!Harris",
+                    "points": 1000,
+                    "ratio": 1.8,
+                    "winloss": -1000
+                },
+                "lthwz83": {
+                    "user": "bvbr",
+                    "option": "!Harris",
+                    "points": 1000,
+                    "ratio": 1.8,
+                    "winloss": -1000
+                },
+                "lthxq93": {
+                    "user": "zombispokelsespirat",
+                    "option": "!Harris",
+                    "points": 501,
+                    "ratio": 1.8,
+                    "winloss": -501
+                },
+                "lthxqx1": {
+                    "user": "zombispokelsespirat",
+                    "option": "!Trump",
+                    "points": 499,
+                    "ratio": 2.3,
+                    "winloss": 648.6999999999999
+                },
+                "lti0in5": {
+                    "user": "hahakings123",
+                    "option": "!Trump",
+                    "points": 1000,
+                    "ratio": 2.4,
+                    "winloss": 1400.0
+                },
+                "lti45ic": {
+                    "user": "Latter-Guard-597",
+                    "option": "!Trump",
+                    "points": 400,
+                    "ratio": 2.3,
+                    "winloss": 519.9999999999999
+                },
+                "lti9gov": {
+                    "user": "Outrageous-Reserve22",
+                    "option": "!Trump",
+                    "points": 350,
+                    "ratio": 2.3,
+                    "winloss": 454.99999999999994
+                },
+                "ltibtom": {
+                    "user": "Happy-Pair-1167",
+                    "option": "!Trump",
+                    "points": 1000,
+                    "ratio": 2.3,
+                    "winloss": 1299.9999999999998
+                },
+                "lticsmx": {
+                    "user": "blaubeere030",
+                    "option": "!Harris",
+                    "points": 450,
+                    "ratio": 1.8,
+                    "winloss": -450
+                },
+                "ltid7mm": {
+                    "user": "Doctor_Bendova",
+                    "option": "!Harris",
+                    "points": 1000,
+                    "ratio": 1.8,
+                    "winloss": -1000
+                },
+                "ltins57": {
+                    "user": "Cokebottle666",
+                    "option": "!Trump",
+                    "points": 1000,
+                    "ratio": 2.3,
+                    "winloss": 1299.9999999999998
+                },
+                "ltiql89": {
+                    "user": "here_for_tendies",
+                    "option": "!Harris",
+                    "points": 666,
+                    "ratio": 1.8,
+                    "winloss": -666
+                },
+                "ltj1cb9": {
+                    "user": "RagingMaxy",
+                    "option": "!Trump",
+                    "points": 1000,
+                    "ratio": 2.3,
+                    "winloss": 1299.9999999999998
+                },
+                "ltj3luk": {
+                    "user": "officers3xy",
+                    "option": "!Harris",
+                    "points": 666,
+                    "ratio": 1.8,
+                    "winloss": -666
+                },
+                "ltj7ncg": {
+                    "user": "darthnicmin",
+                    "option": "!Harris",
+                    "points": 1000,
+                    "ratio": 1.8,
+                    "winloss": -1000
+                },
+                "ltjpu7j": {
+                    "user": "dermat3z",
+                    "option": "!Harris",
+                    "points": 1000,
+                    "ratio": 1.8,
+                    "winloss": -1000
+                },
+                "ltjugq8": {
+                    "user": "_cl0ver_",
+                    "option": "!Trump",
+                    "points": 1000,
+                    "ratio": 2.3,
+                    "winloss": 1299.9999999999998
+                },
+                "ltjzj86": {
+                    "user": "CellPretty8788",
+                    "option": "!Harris",
+                    "points": 899,
+                    "ratio": 1.8,
+                    "winloss": -899
+                },
+                "ltjet8h": {
+                    "user": "Katzmann83",
+                    "option": "!Trump",
+                    "points": 500,
+                    "ratio": 2.3,
+                    "winloss": 649.9999999999999
+                },
+                "ltkaq4w": {
+                    "user": "maximum1977",
+                    "option": "!Trump",
+                    "points": 1000,
+                    "ratio": 2.3,
+                    "winloss": 1299.9999999999998
+                },
+                "ltkb81g": {
+                    "user": "Duennbier0815",
+                    "option": "!Trump",
+                    "points": 501,
+                    "ratio": 2.2,
+                    "winloss": 601.2
+                },
+                "ltkbzd1": {
+                    "user": "Least-Trade-3991",
+                    "option": "!Trump",
+                    "points": 1000,
+                    "ratio": 2.2,
+                    "winloss": 1200.0000000000002
+                },
+                "ltkhbeg": {
+                    "user": "spazierer",
+                    "option": "!Trump",
+                    "points": 500,
+                    "ratio": 2.2,
+                    "winloss": 600.0000000000001
+                },
+                "ltkk8fv": {
+                    "user": "BloodyVeya",
+                    "option": "!Harris",
+                    "points": 420,
+                    "ratio": 1.9,
+                    "winloss": -420
+                },
+                "ltmzsqm": {
+                    "user": "Dr_Kohle",
+                    "option": "!Harris",
+                    "points": 1000,
+                    "ratio": 1.8,
+                    "winloss": -1000
+                },
+                "ltn7fs0": {
+                    "user": "T1reddd",
+                    "option": "!Harris",
+                    "points": 1000,
+                    "ratio": 1.8,
+                    "winloss": -1000
+                },
+                "lto34vw": {
+                    "user": "Intelligent-Archer72",
+                    "option": "!Harris",
+                    "points": 1000,
+                    "ratio": 1.8,
+                    "winloss": -1000
+                },
+                "ltogpns": {
+                    "user": "M4chsi",
+                    "option": "!Trump",
+                    "points": 1000,
+                    "ratio": 2.3,
+                    "winloss": 1299.9999999999998
+                },
+                "ltqsv6m": {
+                    "user": "Critical_Tea_1337",
+                    "option": "!Trump",
+                    "points": 1,
+                    "ratio": 2.2,
+                    "winloss": 1.2000000000000002
+                },
+                "ltr5xup": {
+                    "user": "Baragon1",
+                    "option": "!Trump",
+                    "points": 1000,
+                    "ratio": 2.2,
+                    "winloss": 1200.0000000000002
+                },
+                "ltuqj0i": {
+                    "user": "WerWeissDenScheiss",
+                    "option": "!Trump",
+                    "points": 1000,
+                    "ratio": 2.2,
+                    "winloss": 1200.0000000000002
+                },
+                "ltz3fcq": {
+                    "user": "VinzSB",
+                    "option": "!Trump",
+                    "points": 1000,
+                    "ratio": 2.2,
+                    "winloss": 1200.0000000000002
+                },
+                "ltzuw73": {
+                    "user": "Ich_han_nen_deckel",
+                    "option": "!Harris",
+                    "points": 1000,
+                    "ratio": 1.9,
+                    "winloss": -1000
+                },
+                "lu1tv7i": {
+                    "user": "wuddeldu",
+                    "option": "!Harris",
+                    "points": 500,
+                    "ratio": 1.9,
+                    "winloss": -500
+                },
+                "lu1ud7e": {
+                    "user": "teamkiller3571",
+                    "option": "!Harris",
+                    "points": 1000,
+                    "ratio": 1.8,
+                    "winloss": -1000
+                },
+                "lu1z35t": {
+                    "user": "Typical-Calendar-840",
+                    "option": "!Trump",
+                    "points": 500,
+                    "ratio": 2.2,
+                    "winloss": 600.0000000000001
+                },
+                "luoisg6": {
+                    "user": "Conclusio",
+                    "option": "!Trump",
+                    "points": 1000,
+                    "ratio": 2.2,
+                    "winloss": 1200.0000000000002
+                },
+                "lv8f8e2": {
+                    "user": "Front_Nebula5217",
+                    "option": "!Trump",
+                    "points": 1000,
+                    "ratio": 2.2,
+                    "winloss": 1200.0000000000002
+                }
+            }
+        }
+    ]
+}

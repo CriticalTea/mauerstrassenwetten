@@ -1,0 +1,32 @@
+[
+    {
+        "id": "1g7u0nh",
+        "description": "Wer gewinnt die Wahl? Kamala Harris oder Donald Trump?",
+        "options": [
+            {
+                "command": "!Harris",
+                "title": "Kamala Harris gewinnt",
+                "basePoints": 1000
+            },
+            {
+                "command": "!Trump",
+                "title": "Donald Trump gewinnt",
+                "basePoints": 1000
+            }
+        ],
+        "stakes": {
+            "lstc6oz": {
+                "user": "Critical_Tea_Pot",
+                "option": "!Harris",
+                "points": 1000,
+                "ratio": 2.0
+            },
+            "lstjuzt": {
+                "user": "Critical_Tea_1337",
+                "option": "!Trump",
+                "points": 555,
+                "ratio": 2.0
+            }
+        }
+    }
+]

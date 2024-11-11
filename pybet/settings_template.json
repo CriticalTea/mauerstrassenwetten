@@ -1,0 +1,8 @@
+{
+"appid" : "<appid>",
+"appname" : "<appname>",
+"secret" : "<secret>",
+"password" : "<password>",
+"username" : "<username>",
+"max_points" : 1000
+}
